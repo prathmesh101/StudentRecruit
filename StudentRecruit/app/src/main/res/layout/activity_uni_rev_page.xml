@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reviews.UniRevPage">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/university_review_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+         />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/university_review_toolbar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/university_review_toolbar">
+
+            <TextView
+                android:id="@+id/university_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+
+                android:scaleType="fitCenter"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+            <TextView
+                android:id="@+id/about_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/university_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+
+                android:text="About"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/about_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/infrastruc_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/about_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Infrastructure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infrastruc_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/infrastruc_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/faculty_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/infrastruc_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Faculty and Staff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/faculty_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/faculty_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/aid_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/faculty_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Financial Aid"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aid_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/aid_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/jobs_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/aid_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Jobs and Placements"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobs_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/jobs_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/life_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/jobs_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Crowd and Campus Life"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/life_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/life_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/verdict_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/life_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+
+                android:text="Verdict"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/verdict_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/verdict_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

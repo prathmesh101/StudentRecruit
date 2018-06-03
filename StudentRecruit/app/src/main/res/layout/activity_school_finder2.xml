@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_type_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:layout_editor_absoluteY="89dp"
+>
+
+
+    <TextView
+        android:id="@+id/greTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Gre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/greFinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/shoot_button"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="out of 340"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/toeflHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/greTitle"
+        android:layout_marginTop="141dp"
+        android:text="Toefl" />
+
+    <EditText
+        android:id="@+id/toeflFinder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/shoot_button"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:hint="out of 120"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/undergraduateScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/greFinder"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:hint="out of 4.0"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/undergradScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/greTitle"
+        android:layout_centerVertical="true"
+        android:text="Undergraduate GPA" />
+
+
+    <Button
+        android:id="@+id/shoot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="100dp"
+        android:onClick="onClickUnivList"
+        android:text="View Universities"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/greFinder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="141dp"
+    />
+
+
+</RelativeLayout>
